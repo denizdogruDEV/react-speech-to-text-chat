@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import './dictaphone.css'
+import './dictaphone.scss'
 import record from './record.svg'
 import stop from './stop.svg'
 import reset from './reset.svg'

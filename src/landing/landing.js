@@ -1,5 +1,5 @@
 import React from 'react';
-import './landing.css'
+import './landing.scss'
 import Dictaphone from '../dictaphone/dictaphone';
 import logo from './mic.svg'
 import speakLogo from  './speak.svg'
