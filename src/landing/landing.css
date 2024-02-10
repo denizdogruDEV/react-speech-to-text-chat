@@ -9,7 +9,7 @@ h2 {
 
 h1 {
     font-size: 72px;
-    color: rgb(43 45 56);
+    color: #2B2D38
 }
 
 .mic {
@@ -31,6 +31,7 @@ h1 {
     padding: 10px 15px;
     background-color: #E94823;
 }
+
 .record-button:hover {
     background-color: #922D16;
 }
@@ -60,7 +61,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #E94823;
+    color: #2B2D38
 }
 
 .container__header > h3 {
