@@ -3,6 +3,7 @@ import './landing.css'
 import Dictaphone from '../dictaphone/dictaphone';
 import logo from './mic.svg'
 import speakLogo from  './speak.svg'
+import background from './background.svg'
 
 const Landing = () => {
     const showDictaphone = () => {
@@ -36,6 +37,7 @@ const Landing = () => {
                     <p>Your words will be swiftly transcribed. After reviewing and editing the transcript as necessary, send your message to interact with our AI Chat Companion. Enjoy seamless communication</p>
                 </div>
             </div>
+            <img className='background-element' src={background}></img>
         </div>
     )
 }

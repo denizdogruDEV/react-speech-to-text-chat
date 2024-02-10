@@ -67,3 +67,11 @@ h1 {
 .container__content {
     max-width: 600px;
 }
+
+.background-element {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+}
