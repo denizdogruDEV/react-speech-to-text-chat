@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import './dictaphone.css'
+import record from './record.svg'
+import stop from './stop.svg'
+import reset from './reset.svg'
 
 const Dictaphone = () => {
     const [message, setMessage] = useState('');
@@ -41,20 +44,30 @@ const Dictaphone = () => {
         console.log('Your browser does not support speech recognition software! Try Chrome desktop, maybe?');
     }
 
-    const listenContinuously = () => {
-        SpeechRecognition.startListening({
-            continuous: true,
-            language: 'en-GB',
-        });
-    };
+    const recordFunction = (event) => {
+        const startButton = document.querySelector('.button--start');
+        const stopButton = document.querySelector('.button--stop');
+
+        if (event === 'start') {
+            SpeechRecognition.startListening({
+                continuous: true,
+                language: 'en-GB',
+            });
+
+            startButton.classList.add('hide');
+            stopButton.classList.remove('hide')
+        } else {
+            SpeechRecognition.stopListening();
+            startButton.classList.remove('hide');
+            stopButton.classList.add('hide')
+        }
+    }
 
     return (
         <div className='container'>
             <div className="main-content">
-                <span>
-                    listening:
-                    {' '}
-                    {listening ? 'on' : 'off'}
+                <span className={listening ? 'main-content__recording on' : 'main-content__recording'}>
+                    ON AIR
                 </span>
                 <div>
                     {message}
@@ -63,11 +76,16 @@ const Dictaphone = () => {
                     <span>{transcript}</span>
                 </div>
             </div>
-
             <div className="btn-style">
-                <button type="button" onClick={resetTranscript}>Reset</button>
-                <button type="button" onClick={listenContinuously}>Listen</button>
-                <button type="button" onClick={SpeechRecognition.stopListening}>Stop</button>
+                <button type="button" onClick={resetTranscript}>
+                    <img src={reset} height={'40px'} width={'40px'}></img>
+                </button>
+                <button type="button" className='button--start' onClick={() => recordFunction('start')}>
+                    <img src={record} height={'40px'} width={'40px'}></img>
+                </button>
+                <button type="button" className='button--stop hide' onClick={() => recordFunction('stop')}>
+                    <img src={stop} height={'40px'} width={'40px'}></img>
+                </button>
             </div>
         </div>
     );
