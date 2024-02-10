@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/react-speech-to-text-chat/static/css/main.7e4ab9f8.css",
-    "main.js": "/react-speech-to-text-chat/static/js/main.f8a59167.js",
+    "main.css": "/react-speech-to-text-chat/static/css/main.3d608f4e.css",
+    "main.js": "/react-speech-to-text-chat/static/js/main.7d58c235.js",
     "static/js/592.7c495b51.chunk.js": "/react-speech-to-text-chat/static/js/592.7c495b51.chunk.js",
     "static/media/mic.svg": "/react-speech-to-text-chat/static/media/mic.0898e525ea6e548587b87f6cb2eda608.svg",
     "static/media/speak.svg": "/react-speech-to-text-chat/static/media/speak.91f4fbc449a04b44bb07481f0e79cb42.svg",
     "index.html": "/react-speech-to-text-chat/index.html",
+    "static/media/reset.svg": "/react-speech-to-text-chat/static/media/reset.f5ad1a18c949ca6e18dd73bc470fc160.svg",
+    "static/media/record.svg": "/react-speech-to-text-chat/static/media/record.a5185fa9e708184ad6f1daa10cc05409.svg",
+    "static/media/stop.svg": "/react-speech-to-text-chat/static/media/stop.a009cfe97db98f9b4ad13eee1d1fc1aa.svg",
     "static/media/background.svg": "/react-speech-to-text-chat/static/media/background.75fa2b019cb48f8b2555e495be4088fb.svg",
-    "main.7e4ab9f8.css.map": "/react-speech-to-text-chat/static/css/main.7e4ab9f8.css.map",
-    "main.f8a59167.js.map": "/react-speech-to-text-chat/static/js/main.f8a59167.js.map",
+    "main.3d608f4e.css.map": "/react-speech-to-text-chat/static/css/main.3d608f4e.css.map",
+    "main.7d58c235.js.map": "/react-speech-to-text-chat/static/js/main.7d58c235.js.map",
     "592.7c495b51.chunk.js.map": "/react-speech-to-text-chat/static/js/592.7c495b51.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e4ab9f8.css",
-    "static/js/main.f8a59167.js"
+    "static/css/main.3d608f4e.css",
+    "static/js/main.7d58c235.js"
   ]
 }
