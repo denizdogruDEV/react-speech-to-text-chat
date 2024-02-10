@@ -19,11 +19,6 @@ body {
     background: rgb(255 255 255);
 }
 
-.container {
-    padding: 30px;
-    margin-top: 30px;
-}
-
 .main-content {
     width: 600px;
     min-height: 400px;
