@@ -1,11 +1,11 @@
 import './App.css';
-import Dictaphone from './dictaphone/dictaphone';
+import Landing from './landing/landing';
 
 function App() {
   	return (
     	<div className="App">
       		<header className="App-header"></header>
-	  		<Dictaphone />
+	  		<Landing />
     	</div>
   	);
 }

@@ -34,11 +34,11 @@ const Dictaphone = () => {
     }, [interimTranscript, finalTranscript]);
 
     if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-      return null;
+        return null;
     }
-   
+
     if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-      console.log('Your browser does not support speech recognition software! Try Chrome desktop, maybe?');
+        console.log('Your browser does not support speech recognition software! Try Chrome desktop, maybe?');
     }
 
     const listenContinuously = () => {
@@ -50,7 +50,6 @@ const Dictaphone = () => {
 
     return (
         <div className='container'>
-            <h2>Speech to Text Converter</h2>
             <div className="main-content">
                 <span>
                     listening:
@@ -72,6 +71,6 @@ const Dictaphone = () => {
             </div>
         </div>
     );
-   };
+};
    
-   export default Dictaphone;
+export default Dictaphone;
