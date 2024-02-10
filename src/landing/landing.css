@@ -31,6 +31,9 @@ h1 {
     padding: 10px 15px;
     background-color: #E94823;
 }
+.record-button:hover {
+    background-color: #922D16;
+}
 
 .container__content.hide {
     display: none;
@@ -74,4 +77,5 @@ h1 {
     bottom: 0;
     z-index: -1;
     left: 0;
+    opacity: 35%;
 }
