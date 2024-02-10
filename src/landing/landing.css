@@ -1,0 +1,69 @@
+.container {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 72px;
+    color: rgb(43 45 56);
+}
+
+.mic {
+    height: 200px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.dictaphone {
+    display: none;
+}
+
+.dictaphone.show {
+    display: block;
+}
+
+.record-button {
+    margin-top: 50px;
+    padding: 10px 15px;
+    background-color: #E94823;
+}
+
+.container__content.hide {
+    display: none;
+}
+
+.container__content__inner {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__text {
+    margin-top: 60px;
+    max-width: 300px;
+}
+
+.container__text > p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.container__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #E94823;
+}
+
+.container__header > h3 {
+    margin-left: 10px;
+}
+
+.container__content {
+    max-width: 600px;
+}
